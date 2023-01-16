@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2227c249-ede5-42e4-8c37-5caf67137a16" name="Changes" comment="fixed sellVehicle in Dealership.kt&#10;added some comments">
+    <list default="true" id="2227c249-ede5-42e4-8c37-5caf67137a16" name="Changes" comment="alles fertig bis auf nr 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Car.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Car.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Lorry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Lorry.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,7 @@
       <updated>1672911227853</updated>
       <workItem from="1672911229182" duration="37250000" />
       <workItem from="1672999050408" duration="4750000" />
-      <workItem from="1673858860432" duration="6646000" />
+      <workItem from="1673858860432" duration="7759000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1673002938622</created>
@@ -110,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673864817685</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="alles fertig bis auf nr 4">
+      <created>1673865885236</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673865885236</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +126,7 @@
     <MESSAGE value="Hieber seine Aenderungen der Aufgabe implementiert&#10;die fotze" />
     <MESSAGE value="finished Dealership.kt" />
     <MESSAGE value="fixed sellVehicle in Dealership.kt&#10;added some comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed sellVehicle in Dealership.kt&#10;added some comments" />
+    <MESSAGE value="alles fertig bis auf nr 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="alles fertig bis auf nr 4" />
   </component>
 </project>
