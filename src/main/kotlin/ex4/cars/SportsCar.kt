@@ -18,6 +18,6 @@ class SportsCar(type: CarType, price: Int, seats: Byte, performance: Short, val 
 
     //override toString to print all parameters
     override fun toString(): String {
-        return ("$type - $price€: Seats: $seats, Performance: ${performance}kw, Suspension Travel ${suspension}cm")
+        return ("$type - ${price / 100},${price % 100}€: Seats: $seats, Performance: ${performance}kw, Suspension Travel: ${suspension}cm")
     }
 }

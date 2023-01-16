@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2227c249-ede5-42e4-8c37-5caf67137a16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Car.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/CarType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Lorry.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/LorryType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/PassengerCar.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/PassengerCarType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/SportsCar.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/dealership/Dealership.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/exceptions/IllegalCarTypeException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/exceptions/InsufficientBalanceException.kt" afterDir="false" />
+    <list default="true" id="2227c249-ede5-42e4-8c37-5caf67137a16" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Lorry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Lorry.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/PassengerCar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/PassengerCar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/SportsCar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/SportsCar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/dealership/Dealership.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/dealership/Dealership.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +81,24 @@
       <option name="presentableId" value="Default" />
       <updated>1672911227853</updated>
       <workItem from="1672911229182" duration="37250000" />
-      <workItem from="1672999050408" duration="3414000" />
+      <workItem from="1672999050408" duration="4750000" />
+      <workItem from="1673858860432" duration="1878000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1673002938622</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673002938622</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>

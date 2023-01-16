@@ -116,6 +116,6 @@ class Lorry (type : CarType, price : Int, seats : Byte, performance : Short, var
 
     //override toString to print all parameters
     override fun toString(): String {
-        return ("$type - $price€: Seats: $seats, Performance: ${performance}kw, Max Weight ${maxWeight}kg")
+        return ("$type - ${price / 100},${price % 100}€: Seats: $seats, Performance: ${performance}kw, Max Weight: ${maxWeight}kg")
     }
 }

@@ -17,6 +17,6 @@ open class PassengerCar (type: CarType, price: Int, seats: Byte, performance: Sh
 
     //override toString to print all parameters
     override fun toString(): String {
-        return ("$type - $price€: Seats: $seats, Performance: ${performance}kw")
+        return ("$type - ${price / 100},${price % 100}€: Seats: $seats, Performance: ${performance}kw")
     }
 }

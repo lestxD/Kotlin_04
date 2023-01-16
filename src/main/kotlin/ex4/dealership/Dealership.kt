@@ -2,7 +2,6 @@ package ex4.dealership
 
 import ex4.cars.Car
 import ex4.cars.CarType
-import ex4.cars.PassengerCar
 import ex4.cars.PassengerCarType
 import ex4.exceptions.InsufficientBalanceException
 
@@ -11,9 +10,9 @@ import ex4.exceptions.InsufficientBalanceException
  * Class for TODO
  * Status: TODO finish this class
  */
-class Dealership(val name : String, var vehicles : MutableMap<String, MutableList<Car>> = mutableMapOf(), var balance : Long) {
+class Dealership(private val name : String, private var vehicles : MutableMap<String, MutableList<Car>> = mutableMapOf(), private var balance : Long) {
 
-    //check if given vehicles contains the three lists
+    //check if given vehicles map contains the three lists
     init {
         if (vehicles["SportsCars"] == null)
             vehicles["SportsCars"] = mutableListOf()
@@ -76,7 +75,7 @@ class Dealership(val name : String, var vehicles : MutableMap<String, MutableLis
     override fun toString(): String {
         var output = """
         Name: $name
-        Balance: $balance
+        Balance: ${balance / 100},${balance % 100}
         Vehicles: ${"\n"}
         """.trimIndent()
 
