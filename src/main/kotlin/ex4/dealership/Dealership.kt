@@ -1,14 +1,12 @@
 package ex4.dealership
 
-import ex4.cars.Car
-import ex4.cars.CarType
-import ex4.cars.PassengerCarType
+import ex4.cars.*
 import ex4.exceptions.InsufficientBalanceException
 
 /*
  * by group 14
- * Class for TODO
- * Status: TODO finish this class
+ * Class for representing Dealership
+ * Status: finished
  */
 class Dealership(private val name : String, private var vehicles : MutableMap<String, MutableList<Car>> = mutableMapOf(), private var balance : Long) {
 
@@ -24,12 +22,36 @@ class Dealership(private val name : String, private var vehicles : MutableMap<St
             vehicles["Lorries"] = mutableListOf()
     }
 
-    //The method sellVehicle sells a car and removes it from the vehicles map //TODO implement
-    //updates balance + price of car //TODO implement
-    //optional discount, optional carType //TODO implement
-    //TODO ask what do with carType
-    fun sellVehicle(car : Car, carType : CarType = PassengerCarType.SUV, discount : Short) : Triple<Car, Long, Int>{
-        //Todo check if car avaible
+    //The method sellVehicle sells a car and removes it from the vehicles map
+    //updates balance + price of car
+    //optional discount, optional carType (default val for example SUV / only used for Lorries)
+    fun sellVehicle(car : Car, carType : CarType = PassengerCarType.SUV, discount : Short = 0) : Triple<Car, Long, Int>{
+        val carAvailable : Boolean
+        when(car.type){
+            PassengerCarType.SPORTSCAR ->{
+                carAvailable = vehicles["SportsCars"]?.remove(car) == true
+            }
+            PassengerCarType.SEDAN ->{
+                carAvailable = vehicles["Cars"]?.remove(car) == true
+            }
+            PassengerCarType.HATCHBACK ->{
+                carAvailable = vehicles["Cars"]?.remove(car) == true
+            }
+            PassengerCarType.SUV ->{
+                carAvailable = vehicles["Cars"]?.remove(car) == true
+            }
+            else ->{
+                carAvailable = vehicles["Lorries"]?.remove(car) == true
+
+                if(car is Lorry && carType is LorryType)
+                    car.changeType(carType)
+            }
+        }
+
+        car.giveDiscount(discount)
+
+        if(carAvailable)
+            balance += car.price
 
         return Triple(car, balance, car.price)
     }

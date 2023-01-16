@@ -18,7 +18,7 @@ class Lorry (type : CarType, price : Int, seats : Byte, performance : Short, var
 
     //method changeType changes the LorryType of an existing Lorry and weight
     //returns extra charge
-     fun changeType(lorryType : LorryType) : Int{
+    fun changeType(lorryType : LorryType) : Int{
         val rememberType = type
         type = lorryType
 
