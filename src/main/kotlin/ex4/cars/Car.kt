@@ -8,7 +8,7 @@ package ex4.cars
 abstract class Car (var type : CarType, var price : Int, val seats : Byte, val performance : Short) {
 
     //The method giveDiscount returns the price - discount
-    fun giveDiscount(discount: Short): Int {
+    private fun giveDiscount(discount: Short): Int {
         if(discount > 1000 || discount < 0 || (type == PassengerCarType.SPORTSCAR && discount > 400))
             throw IllegalArgumentException("IllegalArgumentException at giveDiscount")
 

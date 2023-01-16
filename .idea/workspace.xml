@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2227c249-ede5-42e4-8c37-5caf67137a16" name="Changes" comment="finished Dealership.kt">
+    <list default="true" id="2227c249-ede5-42e4-8c37-5caf67137a16" name="Changes" comment="fixed sellVehicle in Dealership.kt&#10;added some comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Car.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Car.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Lorry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/Lorry.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/SportsCar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/cars/SportsCar.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/dealership/Dealership.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/dealership/Dealership.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/exceptions/IllegalCarTypeException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/exceptions/IllegalCarTypeException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ex4/exceptions/InsufficientBalanceException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ex4/exceptions/InsufficientBalanceException.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
       <updated>1672911227853</updated>
       <workItem from="1672911229182" duration="37250000" />
       <workItem from="1672999050408" duration="4750000" />
-      <workItem from="1673858860432" duration="5582000" />
+      <workItem from="1673858860432" duration="6646000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1673002938622</created>
@@ -106,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673863154979</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed sellVehicle in Dealership.kt&#10;added some comments">
+      <created>1673864817685</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673864817685</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +120,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="Hieber seine Aenderungen der Aufgabe implementiert&#10;die fotze" />
     <MESSAGE value="finished Dealership.kt" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished Dealership.kt" />
+    <MESSAGE value="fixed sellVehicle in Dealership.kt&#10;added some comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed sellVehicle in Dealership.kt&#10;added some comments" />
   </component>
 </project>

@@ -5,9 +5,9 @@ import ex4.exceptions.IllegalCarTypeException
 /*
  * by group 14
  * Class for representing Lorries
- * Status: TODO finish this class
+ * Status: finished
  */
-class Lorry (type : CarType, price : Int, seats : Byte, performance : Short, var maxWeight : Short) : Car(type, price,
+class Lorry (type : CarType, price : Int, seats : Byte, performance : Short, private var maxWeight : Short) : Car(type, price,
     seats, performance){
 
     //check if CarType is correct
@@ -18,7 +18,7 @@ class Lorry (type : CarType, price : Int, seats : Byte, performance : Short, var
 
     //method changeType changes the LorryType of an existing Lorry and weight
     //returns extra charge
-    fun changeType(lorryType : LorryType) : Int{
+    private fun changeType(lorryType : LorryType) : Int{
         val rememberType = type
         type = lorryType
 
@@ -97,7 +97,7 @@ class Lorry (type : CarType, price : Int, seats : Byte, performance : Short, var
 
     //The method giveDiscount returns the (price + changeCost) - discount
     //if absolut Value of Discount > 10.000€ change Cost are for free
-    fun giveDiscount(discount : Short, changeCost : Int) : Int{
+    private fun giveDiscount(discount : Short, changeCost : Int) : Int{
         if(discount > 1000 || discount < 0)
             throw IllegalArgumentException("IllegalArgumentException at giveDiscount")
 
