@@ -1,57 +1,86 @@
 package ex4.dealership
 
-import ex4.cars.Car
-import ex4.cars.PassengerCar
-import ex4.cars.PassengerCarType
+import ex4.cars.*
 
 /*
  * by group 14
  * Type-safe Builder for the Dealership.kt class
- * Status: //TODO not finished
+ * Status: finished
  */
 
 //call the Type-safe Builder for Dealership
 fun dealership(initialize: DealerBuilder.() -> Unit) = DealerBuilder().apply { initialize()}.build()
 
-//class which builds the Dealership
+//class which builds a Dealership
 class DealerBuilder {
 
-    /*
-     * Tutorial notices:
-     * Class Person = Dealership
-     * (Data class) address = (Non Data class??) car or Lorry or sport car
-     * buildPerson = dealership
-     */
-
     //default values to avoid lateinit, Delegates.notNull and !!
-    private var name : String = ""
-    private var balance : Long = 0
-    private var vehicles : MutableMap<String,MutableList<Car>> = mutableMapOf("SportsCars" to mutableListOf(),
+    var name : String = ""
+    var balance : Long = 0
+    var vehicles : MutableMap<String,MutableList<Car>> = mutableMapOf("SportsCars" to mutableListOf(),
         "Cars" to mutableListOf(), "Lorries" to mutableListOf())
 
-    //build new Dealership without any instance of car
+    //create new Dealership
     fun build(): Dealership = Dealership(name, vehicles, balance)
 
 
     //add instance of SportsCar to the map
-    fun addSportsCar(initialize: DealerBuilder.() -> Unit) = DealerBuilder().also {
+    fun addSportsCar(initialize: SportsCarBuilder.() -> Unit) = SportsCarBuilder().also {
             sportsCar -> sportsCar.initialize()
-        vehicles["SportsCars"]?.add(PassengerCar(PassengerCarType.SUV, 0, 0, 0)) //TODO
+        vehicles["SportsCars"]?.add(sportsCar.build())
     }
 
     //add instance of PassengerCar to the map
-    fun addPassengerCar(initialize: DealerBuilder.() -> Unit) = DealerBuilder().also {
+    fun addPassengerCar(initialize: CarBuilder.() -> Unit) = CarBuilder().also {
             passengerCar -> passengerCar.initialize()
-        vehicles["Cars"]?.add(PassengerCar(PassengerCarType.SUV, 0, 0, 0)) //TODO
+        vehicles["Cars"]?.add(passengerCar.build())
     }
 
     //add instance of Lorry to the map
-    fun addLorry(initialize: DealerBuilder.() -> Unit) = DealerBuilder().also {
+    fun addLorry(initialize: LorryBuilder.() -> Unit) = LorryBuilder().also {
             lorry -> lorry.initialize()
-        vehicles["Lorries"]?.add(PassengerCar(PassengerCarType.SUV, 0, 0, 0)) //TODO
+        vehicles["Lorries"]?.add(lorry.build())
     }
 }
 
+//class which builds a SportsCars
+class SportsCarBuilder{
+    //default values to avoid lateinit, Delegates.notNull and !!
+    var type : PassengerCarType = PassengerCarType.SPORTSCAR
+    var price: Int = 0
+    var seats: Byte = 0
+    var performance: Short = 0
+    var suspension: Float = 0f
+
+    //create new SportsCar
+    fun build() : SportsCar = SportsCar(type, price, seats, performance, suspension)
+}
+
+//class which builds a car
+class CarBuilder{
+
+    //default values to avoid lateinit, Delegates.notNull and !!
+    var type : PassengerCarType = PassengerCarType.SUV
+    var price: Int = 0
+    var seats: Byte = 0
+    var performance: Short = 0
+
+    //create new car
+    fun build() : PassengerCar = PassengerCar(type, price, seats, performance)
+}
+
+//class which builds a Lorry
+class LorryBuilder{
+    //default values to avoid lateinit, Delegates.notNull and !!
+    var type : LorryType = LorryType.COVERED
+    var price: Int = 0
+    var seats: Byte = 0
+    var performance: Short = 0
+    var maxWeight : Short = 0
+
+    //create new Lorry
+    fun build() : Lorry =Lorry(type, price, seats, performance, maxWeight)
+}
 
 
 

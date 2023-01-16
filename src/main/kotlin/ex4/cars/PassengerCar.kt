@@ -7,11 +7,13 @@ import ex4.exceptions.IllegalCarTypeException
  * Class for representing Passenger Cars
  * Status: finished
  */
-open class PassengerCar (type: CarType, price: Int, seats: Byte, performance: Short): Car(type, price, seats, performance){
+open class PassengerCar (type: CarType, price: Int, seats: Byte, performance: Short): Car(type, price, seats,
+    performance){
 
     //check if CarType is correct
     init {
-        if (type != PassengerCarType.SPORTSCAR && type != PassengerCarType.HATCHBACK && type != PassengerCarType.SUV && type != PassengerCarType.SEDAN)
+        if (type != PassengerCarType.SPORTSCAR && type != PassengerCarType.HATCHBACK && type != PassengerCarType.SUV &&
+            type != PassengerCarType.SEDAN)
             throw IllegalCarTypeException("PassengerCar was created with invalid CarType")
     }
 

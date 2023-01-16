@@ -7,8 +7,8 @@ import ex4.exceptions.IllegalCarTypeException
  * Class for representing Sports Cars
  * Status: finished
  */
-class SportsCar(type: CarType, price: Int, seats: Byte, performance: Short, private val suspension : Float) : PassengerCar(type,
-    price, seats, performance,){
+class SportsCar(type: CarType, price: Int, seats: Byte, performance: Short, private val suspension : Float) :
+    PassengerCar(type, price, seats, performance){
 
     //check if CarType is correct
     init {
@@ -18,6 +18,7 @@ class SportsCar(type: CarType, price: Int, seats: Byte, performance: Short, priv
 
     //override toString to print all parameters
     override fun toString(): String {
-        return ("$type - ${price / 100},${price % 100}€: Seats: $seats, Performance: ${performance}kw, Suspension Travel: ${suspension}cm")
+        return ("$type - ${price / 100},${price % 100}€: Seats: $seats, Performance: ${performance}kw, " +
+                "Suspension Travel: ${suspension}cm")
     }
 }

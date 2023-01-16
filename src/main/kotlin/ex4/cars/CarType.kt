@@ -5,5 +5,4 @@ package ex4.cars
  * Interface CarType for different Enums of CarTypes
  * Status: finished
  */
-interface CarType {
-}
+interface CarType
