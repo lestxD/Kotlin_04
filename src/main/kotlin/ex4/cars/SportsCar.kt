@@ -5,9 +5,9 @@ import ex4.exceptions.IllegalCarTypeException
 /*
  * by group 14
  * Class for representing Sports Cars
- * Status: TODO finish this class
+ * Status: finished
  */
-class SportsCar(type: CarType, price: Int, seats: Byte, performance: Short, val suspension : Float) : PassengerCar(type,
+class SportsCar(type: CarType, price: Int, seats: Byte, performance: Short, private val suspension : Float) : PassengerCar(type,
     price, seats, performance,){
 
     //check if CarType is correct

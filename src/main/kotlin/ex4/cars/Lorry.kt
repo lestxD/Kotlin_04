@@ -4,7 +4,7 @@ import ex4.exceptions.IllegalCarTypeException
 
 /*
  * by group 14
- * Class for representing Lorrys
+ * Class for representing Lorries
  * Status: TODO finish this class
  */
 class Lorry (type : CarType, price : Int, seats : Byte, performance : Short, var maxWeight : Short) : Car(type, price,

@@ -42,16 +42,15 @@ class Dealership(private val name : String, private var vehicles : MutableMap<St
             }
             else ->{
                 carAvailable = vehicles["Lorries"]?.remove(car) == true
-
-                if(car is Lorry && carType is LorryType)
-                    car.changeType(carType)
             }
         }
 
-        car.giveDiscount(discount)
-
-        if(carAvailable)
-            balance += car.price
+        if(carAvailable){
+            balance += if(car is Lorry && carType is LorryType)
+                car.sellVehicle(discount, carType)
+            else
+                car.sellVehicle(discount)
+        }
 
         return Triple(car, balance, car.price)
     }
