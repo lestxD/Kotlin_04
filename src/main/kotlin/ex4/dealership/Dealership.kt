@@ -8,7 +8,8 @@ import ex4.exceptions.InsufficientBalanceException
  * Class for representing Dealership
  * Status: finished
  */
-class Dealership(private val name : String, private var vehicles : MutableMap<String, MutableList<Car>> = mutableMapOf(), private var balance : Long) {
+class Dealership(private val name : String, private var vehicles : MutableMap<String,MutableList<Car>> = mutableMapOf(),
+                 private var balance : Long) {
 
     //check if given vehicles map contains the three lists
     init {
